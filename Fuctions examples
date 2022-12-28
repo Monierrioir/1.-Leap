@@ -1,0 +1,44 @@
+// Drawing square with functions
+#include<stdio.h>
+
+void drawsquare(int row,int coulumn){
+	int j,i;
+	for(i=0;i<row;i++){
+		
+		for (j=0;j<coulumn;j++){
+			
+			printf("-");
+		}
+	
+		printf("\n");
+		
+		
+	}
+	
+	
+}
+int main(){
+	int nr,nc;
+	printf("PLease enter number of row and coulumn : ");
+	scanf("%d %d",&nr,&nc);
+	drawsquare(nr,nc);
+	return 0;
+}
+// Drawing square with functions
+#include<stdio.h>
+
+void drawsquare(int row,int coulumn){
+	int j,i;
+	for(i=0;i<row;i++){
+		
+		for (j=0;j<coulumn;j++){
+			
+			printf("-");
+		}
+	
+		printf("\n");
+		
+		
+	}
+	
+	
