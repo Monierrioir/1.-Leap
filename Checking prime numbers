@@ -1,0 +1,36 @@
+//Checking prime numbers
+#include <stdio.h>
+#include<stdlib.h>
+#include <time.h>
+
+int main (void){
+	
+	int i,num,c=0;
+	
+	printf("Please enter a positive number: ");
+	scanf("%d",&num);
+	
+if (num>0){
+	
+	for(i=1;i<=num;i++){
+		if (num%i==0)
+		c++;
+		
+	}
+	
+	if (c==2){
+		printf("This number is prime.");
+	}
+	else 
+	printf("This number is not prime.");
+}
+	
+else 
+printf("Invalid input!!!Please enter different number.");
+
+return 0;	
+	
+}
+
+
+
