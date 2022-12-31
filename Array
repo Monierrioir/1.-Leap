@@ -1,0 +1,84 @@
+#include <stdio.h>
+int main ()
+{
+//Dizi1 kendisi değer ataması yapar.	
+
+int dizi1[10];
+int i;
+for(i=0;i<10;i++){
+	printf("dizi1[%d]=%d\n",i,dizi1[i]);
+}
+	//Dizi2 tüm değerlerini sıfıra eşitler.
+	
+	int dizi2[10];
+	int i;
+	for (i=0;i<10;i++){
+		dizi2[i]=0;
+	}
+for (i=0;i<10;i++){
+	printf("dizi2[%d]=%d\n",i,dizi2[i]);
+}
+
+
+//Dizi3 verilen değerleri girer.
+
+int  dizi3[10]={10,25,36,49,57,64,78,81,92,100};	
+int i;
+for (i=0;i<10;i++){
+	printf("dizi3[%d]=%d\n",i,dizi3[i]);
+	
+}
+
+
+//Dizi4 verilen değerden sonrakileri sıfıra eşitler.
+
+int dizi4[10]={45,89,36};
+int i;
+for (i=0;i<10;i++){
+	printf("dizi4[%d]=%d\n",i,dizi4[i]);
+}	
+	return 0;
+}
+
+
+//Dizinin elemanlarını kullanıcıdan isteme
+#include <stdio.h>
+int main ()
+{
+int num[5];
+int i;
+int element;
+for (i=0;i<5;i++){
+	
+	printf("Please enter %d.element of array:\n ",i);
+	scanf("%d",&element);
+		
+		printf("num[%d]=%d\n",i,element);
+			
+}
+
+	return 0;
+}
+
+//Dizinin elemanlarını kullanıcıdan alıp aritmetik ortalama bulma
+#include <stdio.h>
+int main ()
+{
+
+int number[5];
+int i,element,sum=0,average=0;
+for(i=0;i<5;i++) {
+printf("Please enter %d. element:\t ",i);
+scanf("%d",&element);
+printf("number[%d]=%d\n",i,element);
+sum=sum+element;
+
+	
+} 
+
+	average=sum/i;
+	printf("The value is:%d",average);
+	
+	
+	return 0;
+}
