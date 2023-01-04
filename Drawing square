@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main(void){
+	
+	int i,j,first;
+	printf("Please enter a number: ");
+	scanf("%d",&first);
+	for(i=1;i<=first;i++){
+if (i==1){
+	for(j=1;j<=first;j++){
+		printf("* ");
+	}
+printf("\n");
+}
+else if (i==first){
+	for(j=1;j<=first;j++){
+		printf("* ");
+	}
+	printf("\n");
+}
+else{
+	for(j=1;j<=first;j++){
+	if(j==1){
+		printf("* ");
+	}	
+	else if(j==first){
+		printf("* ");
+	}
+	else
+		printf("  ");
+	}
+	printf("\n");
+}
+
+}
+		return 0;
+}
