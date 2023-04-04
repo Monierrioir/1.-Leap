@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int leapyear(int year){
+	
+	return ((year%4==0)&&(year%100!=0)||(year%400==0));
+}
+
+int main(){
+	int num;
+	printf("PLease enter a number: ");
+	scanf("%d",&num);
+	
+	if (leapyear(num)){
+		
+		printf("%d is a leap year.",num);
+	}
+	else{
+		printf("%d is not a leap year.",num);
+	}
+	
+	
+	return 0;
+}
