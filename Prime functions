@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int prime(int num) {
+    int i;
+
+    if (num < 2) {
+        return 0; // Numbers less than 2 are not prime
+    }
+
+    for (i = 2; i <= num / 2; i++) {
+        if (num % i == 0) {
+            return 0; // Not a prime number
+        }
+    }
+
+    return 1; // Prime number
+}
+
+int main() {
+    int num;
+
+    printf("Please enter a number: ");
+    scanf("%d", &num);
+
+    if (prime(num)) {
+        printf("The number is prime\n");
+    } else {
+        printf("The number is not prime\n");
+    }
+
+    return 0;
+}
