@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(){
+int i,j,line;
+    printf("Please enter the row: \n");
+    scanf("%d",&line);
+
+for(i=0;i<line;i++){
+    for(j=0;j<(line-i);j++){
+        printf(" ");
+    }
+    for(j=0;j<(i*2)-1;j++){
+        printf("*");
+    }
+    printf("\n");
+    
+}
+    return 0;
+}
